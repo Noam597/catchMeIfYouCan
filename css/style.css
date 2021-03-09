@@ -1,0 +1,93 @@
+body{
+    background-image: linear-gradient(blueviolet,lightblue);
+    background-size: cover;
+     
+}
+
+
+.container{
+    width: 1140px;
+    margin: auto;
+}
+
+#start{
+    text-align: center;
+    font-size: x-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 100%;
+    cursor: pointer;
+    background-image: linear-gradient(yellow,red);
+    border: solid 3px black;
+    border-radius: 5px;
+    padding: 10px;
+}
+#screen{
+    width: 700px;
+    height:600px;
+    background-color: black;
+    margin: 15px;
+    position: relative;
+}
+.point-button{
+    text-align: center;
+    cursor: pointer;
+    background-color: lightblue;
+    width: 100px;
+    padding: 5px;
+    position: absolute;
+    user-select: none;
+}
+
+
+.infoholder{
+    margin: 15px;
+    background-color: #2727b3;
+    border-radius: 5px;
+}
+.gameinfo{
+    text-align: center;
+    font-size: larger;
+    font-weight: 600;
+    color: blueviolet;
+    width: 200px;
+    
+    background-color: lightblue;
+    padding: 5px;
+    margin: 5px;
+}
+.wrap{
+    display: flex;
+}
+@keyframes pointbar{
+0%{background-color: lightblue;}
+25%{background-color: blue}
+50%{background-color: green;}
+75%{background-color: lightgreen;}
+100%{background-color: yellow;}
+100%{transform: rotateZ(360deg);}
+}
+
+.hsEach{
+    position: relative;
+ 
+}
+.datepopup{
+    text-align: center;
+    position: absolute;
+    top: -30px;
+    left: 55px;
+  color: green;
+  background-color: #67dda2;
+  border: solid 2px green;
+  border-radius: 5px;
+  padding: 3px;
+ display:none;
+  
+  
+}
+
+
+.hsEach:hover > span{
+  display: block
+}
+
